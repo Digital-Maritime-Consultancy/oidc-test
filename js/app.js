@@ -58,6 +58,11 @@ if (!user) {
     logOutButton.hidden = true;
     validateButton.hidden = true;
 } else {
+    const accessToken = user.access_token;
+    const tokenSplit = accessToken.split('.');
+    const content = JSON.parse(b64DecodeUnicode(tokenSplit[1]));
+    console.log(content);
+
     logOutButton.addEventListener('click', () => {
         userManager.signoutRedirect({post_logout_redirect_uri: window.location.href});
     });
