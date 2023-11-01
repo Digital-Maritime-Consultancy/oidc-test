@@ -20,7 +20,7 @@ const config = {
     client_id: '1d4e6a86-f64d-412e-ae54-cf8bc2ff04ed',
     redirect_uri: window.location.origin + '/callback.html',
     response_type: 'code',
-    scope: 'openid',
+    scope: 'api://1d4e6a86-f64d-412e-ae54-cf8bc2ff04ed/.default openid',
     automaticSilentRenew: true
 };
 
