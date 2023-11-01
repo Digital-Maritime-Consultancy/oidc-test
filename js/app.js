@@ -17,7 +17,7 @@ const redCheckMark = "\u274C";
 
 const config = {
     authority: "https://login.microsoftonline.com/2d624e26-a5fc-49e9-82d9-dffb48a45e93/v2.0/.well-known/openid-configuration",
-    client_id: '078ea64e-85d4-46ef-8d5c-d0d85121b595',
+    client_id: '1d4e6a86-f64d-412e-ae54-cf8bc2ff04ed',
     redirect_uri: window.location.origin + '/callback.html',
     response_type: 'code',
     scope: 'openid',
